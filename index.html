@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <script src="https://kit.fontawesome.com/b699c21610.js" crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+            integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI="
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+            integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>The Barber Saloon</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars toggle"></i>
+                    <i class="fas fa-times toggle"></i>
+                </div>
+
+                <nav class="d-flex align-items-center justify-content-center justify-content-lg-between">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo.png" alt="" class="img-fluid" />
+                    </a>
+                    <ul class="nav-list text-center p-0">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link">Our Team</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-text w-100 text-white px-2 px-sm-0">
+                    <img src="img/barbershop.png" alt="" />
+                    <h1>
+                        Best Barber In <br />
+                        Your Town
+                    </h1>
+                    <h4>Professional Care</h4>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="about-img" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                                <img src="img/jason-leung-vertical.jpg" alt="" class="img-fluid" />
+                                <div class="hours">
+                                    <img src="img/wall-clock.png" alt="" width="20" />
+                                    <h2>Opening Hours</h2>
+                                    <p>Mon-Fri (9.00-7.00)</p>
+                                    <p>Sat (10.00-4.00)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-6 about-text"
+                            data-aos="fade-left"
+                            data-aos-duration="1000"
+                            data-aos-offset="300"
+                        >
+                            <h4>About Us</h4>
+                            <h2>
+                                Experienced and <br />
+                                Traditional Stylish <br />
+                                Barber Shop
+                            </h2>
+                            <p>
+                                Inspires employees and organizations to support causes they care about. We do this to
+                                bring more resources to the nonprofit that are changing our world.
+                            </p>
+                            <a href="#" class="btn btn-learn btn-gold">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services" id="services">
+                <div class="services-header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                    <i class="fas fa-cut"></i>
+                    <h2>Our Services</h2>
+                </div>
+
+                <div class="services-card">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Men's Facial</span>
+                                    </div>
+                                    <p class="price">...........$15</p>
+                                </div>
+
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Clean Cut</span>
+                                    </div>
+                                    <p class="price">...........$20</p>
+                                </div>
+
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Close Shave</span>
+                                    </div>
+                                    <p class="price">...........$10</p>
+                                </div>
+
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Razor Cut</span>
+                                    </div>
+                                    <p class="price">...........$15</p>
+                                </div>
+
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Head Massage</span>
+                                    </div>
+                                    <p class="price">...........$10</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Classic Haircut</span>
+                                    </div>
+                                    <p class="price">...........$20</p>
+                                </div>
+
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Haircut and Shampoo</span>
+                                    </div>
+                                    <p class="price">...........$25</p>
+                                </div>
+
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Hair Treatment</span>
+                                    </div>
+                                    <p class="price">...........$30</p>
+                                </div>
+
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Beard Trimming</span>
+                                    </div>
+                                    <p class="price">...........$15</p>
+                                </div>
+
+                                <div class="item d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-img">
+                                            <img src="img/rounded.png" alt="" width="50" />
+                                        </div>
+                                        <span class="service">Beard and Moustache</span>
+                                    </div>
+                                    <p class="price">...........$25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slideshow" id="gallery" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                <i class="fas fa-cut"></i>
+                <h2>Our Gallery</h2>
+                <div class="carousel">
+                    <div>
+                        <img src="img/barbershop-horizontal.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div>
+                        <img src="img/hai-phung-horizontal.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div>
+                        <img src="img/man-cutting-the-hair-horizontal.jpg" alt="" class="img-fluid" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="our-team" id="team" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                <div class="container">
+                    <div class="our-team-header">
+                        <i class="fas fa-cut"></i>
+                        <h2>Our Cutter Masters</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="barber">
+                                <img src="img/barber1.jpg" alt="" class="img-fluid" />
+                                <h3>Enrique Moniari</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="barber">
+                                <img src="img/barber2.jpg" alt="" class="img-fluid" />
+                                <h3>Jason Diaz</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="barber">
+                                <img src="img/barber3.jpg" alt="" class="img-fluid" />
+                                <h3>Manuel Ventura</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="barber">
+                                <img src="img/barber4.jpg" alt="" class="img-fluid" />
+                                <h3>Rico Damiano</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                <div class="find-us" id="contact">
+                    <h2>How to Find Us</h2>
+                    <div class="contact-info">
+                        <div class="d-flex justify-content-center">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h4>Location</h4>
+                        </div>
+                        <p>200, A-block, Green road, USA</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="d-flex justify-content-center">
+                            <i class="fas fa-phone-alt"></i>
+                            <h4>Call Us</h4>
+                        </div>
+                        <p>+10 378 478 2789</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="d-flex justify-content-center">
+                            <i class="fas fa-paper-plane"></i>
+                            <h4>Mail Us</h4>
+                        </div>
+                        <p>contact@barbershop.com</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="back-to-top">
+                    <a href="#home"><i class="fas fa-chevron-up"></i></a>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <h2 class="join-us">Join Us</h2>
+                        <a href="#">Make Appointment</a>
+                        <p>+10 378 478 2789</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <h2>Address</h2>
+                        <p>200, A-block, Green road, USA</p>
+                        <p>+10 367 267 2678</p>
+                        <p>contact@barbershop.com</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <h2>Navigation</h2>
+                        <div class="navigation">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#gallery">Gallery</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <h2>Newsletter</h2>
+                        <form class="newsletter-form">
+                            <input type="text" class="newsletter-input" placeholder="Your email address..." />
+                            <button class="newsletter-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-12 copyright text-center">
+                        Copyright &copy; 2020 All rights reserved | This template is made with ♡ by Alexandru Stanica
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+            integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
+            crossorigin="anonymous"
+        ></script>
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
